@@ -1,8 +1,7 @@
 FROM centos:centos7
 MAINTAINER Michal Borek <michal@greenpath.pl>
 
-RUN yum update -y && \
-yum install -y wget && \
+RUN yum install -y wget && \
 yum install -y java-1.8.0-openjdk java-1.8.0-openjdk-devel && \
 yum clean all
 
